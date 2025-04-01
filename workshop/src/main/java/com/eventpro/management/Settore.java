@@ -42,5 +42,5 @@ public class Settore {
 
     public void setNumeroPosti(int numeroPosti) {
         this.numeroPosti = numeroPosti;
-    }
+    }    
 }

@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.AnchorPane?>
 
@@ -10,12 +11,22 @@
    <!-- Bottoni per gestire la lista degli eventi -->
    <children>
       <Button text="Visualizza tutti gli eventi" onAction="#handleVisualizzaEventi" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10"/>
-      <Button text="Crea un nuovo Evento" onAction="#switchToCreaEvento" AnchorPane.bottomAnchor="10" AnchorPane.rightAnchor="10"/>
+      <Button text="Crea un nuovo evento" onAction="#switchToCreaEvento" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="200"/>
       <Button text="Filtra eventi dispponibili" onAction="#handleFiltraEventi" AnchorPane.topAnchor="10" AnchorPane.rightAnchor="10"/>
    </children>
    <!-- Lista degli eventi -->
    <children>
-      <ListView fx:id="eventiListView" onMouseClicked="#handleBookSelection" prefWidth="600" prefHeight="350" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10"/>
+      <ListView fx:id="eventiListView" onMouseClicked="#handleDettagliEvento" prefWidth="500" prefHeight="300" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10"/>
+   </children>
+
+   <!-- Note degli eventi -->
+   <children>
+      <Label fx:id="noteLabel" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="10"/>
+   </children>
+
+   <!-- Bottone che in base all'evento selezionato rimanda ai biglietti -->
+   <children>
+      <Button text="Biglietti" onAction="#switchToBiglietti" AnchorPane.bottomAnchor="10" AnchorPane.rightAnchor="10"/>
    </children>
 
    <padding>

@@ -12,12 +12,14 @@ public class Evento {
     private Luogo luogo;
     private String data;
     private String note;
-
+    public Biglietti biglietti; // Associazione con la classe Biglietti
+    
     public Evento(String nome, Luogo luogo, String data, String note) {
         this.nome = nome;
         this.luogo = luogo;
         this.data = data;
         this.note = note;
+        this.biglietti = new Biglietti(); // Inizializza la lista di biglietti
     }
 
     // Getters e Setters
@@ -52,14 +54,29 @@ public class Evento {
     public void setNote(String note) {
         this.note = note;
     }
+ 
+    //numero di biglietti disponibili, prende il numero totale di biglietti    
+    public int bigliettiDisponibili() {
+        return luogo.getNumeroTotale() - biglietti.getBiglietti().size();
+    }
+
+    //numero di biglietti disponibili per settore
+    public int bigliettiSettoreDisponibili(Settore settore) {
+        int count = 0;
+        for (int i = 0; i < biglietti.getBiglietti().size(); i++) {
+            if (((Biglietto) biglietti.getBiglietti().get(i)).getSettore() == settore) {
+                count++;
+            }
+        }
+        return settore.getNumeroPosti() - count;
+    }
 
     @Override
     public String toString() {
         return "Evento{" +
                 "nome='" + nome + '\'' +
-                ", luogo=" + luogo +
-                ", data='" + data + '\'' +
-                ", note='" + note + '\'' +
+                ", luogo=" + luogo.getNome() +
+                ", data='" + data + '\'' +            
                 '}';
     }
 }

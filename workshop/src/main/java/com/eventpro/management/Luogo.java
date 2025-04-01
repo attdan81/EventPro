@@ -12,7 +12,7 @@ public class Luogo {
     private String nome;
     private String indirizzo;
     private String coordinate;
-    private ArrayList settori;
+    private ArrayList<Settore> settori;
 
     public Luogo(String nome, String indirizzo, String coordinate, ArrayList settori){
         this.nome = nome;
@@ -46,5 +46,22 @@ public class Luogo {
     }
     public void setNumeroSettori(ArrayList settori) {
         this.settori = settori;
+    }
+
+    public int getNumeroTotale() {
+        int count=0;
+        for (int i=0; i<settori.size(); i++){
+            count+= ((Settore) settori.get(i)).getNumeroPosti();
+        }
+        return count;
+    }
+
+    public Settore getSettoreByName(String nomeSettore) {
+        for (int i=0; i<settori.size(); i++){
+            if (((Settore) settori.get(i)).getNomeSettore().equals(nomeSettore)){
+                return (Settore) settori.get(i);
+            }
+        }
+        return null;
     }
 }

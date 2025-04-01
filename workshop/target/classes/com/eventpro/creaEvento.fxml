@@ -14,12 +14,12 @@
     <Label text="Crea Evento" />
       <Label text="Nome evento" />
       <TextField fx:id="nomeEvento"  />
-      <Label text="Data evento" />
-      <TextField />
+      <Label text="Data evento"  />
+      <TextField  fx:id="dataEvento"/>
       <Label text="Luogo" />
-      <ChoiceBox prefWidth="150.0" fx:id="sceltaLuogo" />
+      <ChoiceBox fx:id="luogoEvento" prefWidth="150.0" />
       <Label text="Note" />
-      <TextArea prefHeight="200.0" prefWidth="200.0" />
+      <TextArea  fx:id="noteEvento" prefHeight="200.0" prefWidth="200.0" />
         <Button fx:id="creaEventoButton" onAction="#switchToEventi" text="Crea Evento" />
     </children>
     <padding>
