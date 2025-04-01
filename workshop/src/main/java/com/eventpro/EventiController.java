@@ -64,7 +64,7 @@ public class EventiController {
     private void handleDettagliEvento(){
         Evento eventoSelezionato = (Evento)App.eventi.getEvento(eventiListView.getSelectionModel().getSelectedIndex());
         if (eventoSelezionato != null){
-            noteLabel.setText(eventoSelezionato.getNote());
+            noteLabel.setText(eventoSelezionato.getNote() + " Indirizzo: " + eventoSelezionato.getLuogo().getIndirizzo());
         }
         App.currentEvento = eventoSelezionato;
     }
