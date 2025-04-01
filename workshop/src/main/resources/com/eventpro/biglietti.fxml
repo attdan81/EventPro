@@ -16,7 +16,7 @@
    </children>
    <!-- Lista degli biglietti -->
    <children>
-      <ListView fx:id="partecipantiListView" prefWidth="600" prefHeight="300" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10"/>
+      <ListView fx:id="partecipantiListView" prefWidth="585" prefHeight="300" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10"/>
    </children>
 
    <!-- Bottone per tornare alla lista degli eventi-->

@@ -16,7 +16,7 @@
    </children>
    <!-- Lista degli eventi -->
    <children>
-      <ListView fx:id="eventiListView" onMouseClicked="#handleDettagliEvento" prefWidth="500" prefHeight="300" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10"/>
+      <ListView fx:id="eventiListView" onMouseClicked="#handleDettagliEvento" prefWidth="585" prefHeight="300" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10"/>
    </children>
 
    <!-- Note degli eventi -->
