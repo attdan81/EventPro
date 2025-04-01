@@ -27,6 +27,11 @@ public class BigliettiController {
     ListView partecipantiListView;
 
     @FXML
+    public void initialize() {
+        handleVisualizzaPartecipanti();
+    }
+
+    @FXML
     private void handleVisualizzaPartecipanti() {
         partecipantiListView.getItems().clear();
         for (Biglietto biglietto : App.currentEvento.biglietti.getBiglietti()) {

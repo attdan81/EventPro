@@ -20,9 +20,15 @@ import javafx.scene.control.Label;
 public class EventiController {
 
 
-    // inizializzazione interfaccia
+    // inizializzazione interfaccia    
     @FXML private ListView eventiListView;
     @FXML private Label noteLabel;
+
+    // inizializza schermata iniziale
+    @FXML
+    public void initialize() {
+        handleVisualizzaEventi();
+    }
 
     @FXML
     private void switchToCreaEvento() throws IOException {

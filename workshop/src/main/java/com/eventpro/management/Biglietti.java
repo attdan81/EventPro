@@ -6,7 +6,6 @@ import java.util.ArrayList;
  * Autore: Porta Solestà
  * Data: 2025-04-01 
  * Descrizione: Questa classe contiene la lista di biglietti per un determinato evento
- * 
  */
 
 public class Biglietti {
