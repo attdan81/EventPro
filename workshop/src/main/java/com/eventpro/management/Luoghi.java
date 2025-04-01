@@ -11,12 +11,12 @@ public class Luoghi {
 
     public Luoghi() {
         // Inizializzazione dei settori e dei luoghi
-        Settore s1=new Settore("Parterre", "Rosso", 100);
-        Settore s2=new Settore("Anello 1", "Verde", 50);
-        Settore s3=new Settore("Anello 2", "Blu", 50);
-        Settore s4=new Settore("Parterre 2", "Giallo", 50);
-        Settore s5=new Settore("Anello 3", "Viola", 30);
-        Settore s6=new Settore("Anello 4", "Arancione", 20);
+        Settore s1=new Settore("Parterre", "lightblue", 100);
+        Settore s2=new Settore("Anello 1", "red", 50);
+        Settore s3=new Settore("Anello 2", "lightgreen", 50);
+        Settore s4=new Settore("Parterre 2", "yellow", 50);
+        Settore s5=new Settore("Anello 3", "orange", 30);
+        Settore s6=new Settore("Anello 4", "gray", 20);
 
         ArrayList<Settore> settori1 = new ArrayList<Settore>();
         {
