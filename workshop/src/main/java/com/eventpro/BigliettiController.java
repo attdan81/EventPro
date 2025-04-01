@@ -9,6 +9,13 @@ import com.eventpro.management.Luogo;
 import com.eventpro.management.Biglietto;
 import javafx.scene.control.ListView;
 
+/**
+ * * BigliettiController
+ * * Autore: Porta Solestà
+ * * Data: 2025-04-01
+ * * Descrizione: Questa classe gestisce la schermata dei biglietti.
+ * * Permette di visualizzare i biglietti, filtrare i biglietti online e passare alla schermata di creazione di un nuovo biglietto.
+ */
 public class BigliettiController {
 
     @FXML ListView partecipantiListView;

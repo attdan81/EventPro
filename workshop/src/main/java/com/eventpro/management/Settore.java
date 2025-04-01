@@ -1,11 +1,16 @@
 package com.eventpro.management;
 
-    /*
- * nome del settore
- * colore del settore
- * numero di posti
- */
-
+/**
+ * Settore
+ * * Autore: Porta Solestà
+ * * Data: 2025-04-01
+ * * Descrizione: Questa classe rappresenta un settore all'interno di un evento. Contiene informazioni come il nome del settore, il colore e il numero di posti disponibili.
+ * * -- nome_settore
+ * * -- colore_settore
+ * * * -- numero_posto_settore
+ * * * -- numero_posti
+ * * * -- numero_posti_disponibili
+ *  */
 public class Settore {
     // Attributi del settore
     private String nomeSettore;

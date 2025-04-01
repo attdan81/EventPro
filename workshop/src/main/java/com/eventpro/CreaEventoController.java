@@ -8,6 +8,14 @@ import javafx.scene.control.TextField;
 import com.eventpro.management.Evento;
 import com.eventpro.management.Luogo;
 
+/**
+ * * CreaEventoController
+ * * * Autore: Porta Solestà
+ * * * Data: 2025-04-01
+ * * * Descrizione: Questa classe gestisce la schermata di creazione di un nuovo evento.
+ * * * * Permette di inserire i dati dell'evento e di salvarlo.
+ * * * * Permette di selezionare il luogo dell'evento da una lista di luoghi disponibili.
+ */
 public class CreaEventoController {
 
     @FXML

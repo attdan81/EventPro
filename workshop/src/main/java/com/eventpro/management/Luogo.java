@@ -48,6 +48,10 @@ public class Luogo {
         this.settori = settori;
     }
 
+    /**
+     * * Restituisce il numero totale di posti disponibili nel luogo
+     * @return
+     */
     public int getNumeroTotale() {
         int count=0;
         for (int i=0; i<settori.size(); i++){
@@ -56,6 +60,11 @@ public class Luogo {
         return count;
     }
 
+    /**
+     * * Restituisce il numero totale di posti disponibili nel luogo
+     * @param nomeSettore
+     * @return
+     */
     public Settore getSettoreByName(String nomeSettore) {
         for (int i=0; i<settori.size(); i++){
             if (((Settore) settori.get(i)).getNomeSettore().equals(nomeSettore)){

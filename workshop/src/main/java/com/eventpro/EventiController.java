@@ -9,6 +9,14 @@ import com.eventpro.management.Luogo;
 import javafx.scene.control.ListView;
 import javafx.scene.control.Label;
 
+/**
+ * * EventiController
+ * * * Autore: Porta Solestà
+ * * * Data: 2025-04-01
+ * * * Descrizione: Questa classe gestisce la schermata degli eventi.
+ * * * Permette di visualizzare gli eventi, filtrare gli eventi e passare alla schermata di creazione di un nuovo evento.
+ * * * Permette di visualizzare i dettagli di un evento selezionato.
+ */
 public class EventiController {
 
 

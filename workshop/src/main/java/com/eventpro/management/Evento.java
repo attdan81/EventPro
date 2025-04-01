@@ -55,12 +55,20 @@ public class Evento {
         this.note = note;
     }
  
+    /**
+     * * Restituisce il numero massimo di biglietti
+     * @return
+     */
     //numero di biglietti disponibili, prende il numero totale di biglietti    
     public int bigliettiDisponibili() {
         return luogo.getNumeroTotale() - biglietti.getBiglietti().size();
     }
 
-    //numero di biglietti disponibili per settore
+    /**
+     * * Restituisce il numero di biglietti disponibili per un determinato settore
+     * @param settore
+     * @return
+     */
     public int bigliettiSettoreDisponibili(Settore settore) {
         int count = 0;
         for (int i = 0; i < biglietti.getBiglietti().size(); i++) {
@@ -73,10 +81,10 @@ public class Evento {
 
     @Override
     public String toString() {
-        return "Evento{" +
-                "nome='" + nome + '\'' +
-                ", luogo=" + luogo.getNome() +
-                ", data='" + data + '\'' +            
-                '}';
+        return  "Nome: '" + nome + "\n" +
+                "Luogo: " + luogo.getNome() +"\n" +
+                "Data: " + data + "\n" + 
+                "Posti Totali: " + luogo.getNumeroTotale() + "\n" +
+                "Posti Disponibili: " + bigliettiDisponibili();
     }
 }

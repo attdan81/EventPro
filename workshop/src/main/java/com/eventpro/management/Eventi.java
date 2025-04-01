@@ -15,22 +15,43 @@ public class Eventi {
         
     }
 
+    /**
+     * Aggiungi un evento alla lista
+     * @param evento
+     */
     public void aggiungiEvento(Evento evento) {
         eventi.add(evento);
     }
 
+    /**
+     * Rimuovi un evento dalla lista
+     * @param evento
+     */
     public void rimuoviEvento(Evento evento) {
         eventi.remove(evento);
     }
 
+    /**
+     * Restituisce la lista di eventi
+     * @return
+     */
     public ArrayList<Evento> getEventi() {
         return eventi;
     }
 
+    /**
+     * Restituisce un evento dalla lista
+     * @param index
+     * @return
+     */
     public Evento getEvento(int index) {
         return eventi.get(index);
     }
 
+    /**
+     * Restituisce il numero di eventi nella lista
+     * @return
+     */
     @Override
     public String toString() {
         final StringBuilder output = new StringBuilder();

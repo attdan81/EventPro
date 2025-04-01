@@ -6,10 +6,7 @@ import java.util.ArrayList;
  * Autore: Porta Solestà
  * Data: 2025-04-01 
  * Descrizione: Questa classe contiene la lista di biglietti per un determinato evento
- * -- id
--- proprietario
--- online (si,no)
--- numero_posto_settore
+ * 
  */
 
 public class Biglietti {
@@ -21,17 +18,25 @@ public class Biglietti {
         
     }
 
-    // Aggiungi un biglietto alla lista
+    /**
+     * Aggiungi un biglietto alla lista
+     */
     public void aggiungiBiglietto(Biglietto biglietto) {
         biglietti.add(biglietto);
     }
 
-    // Rimuovi un biglietto dalla lista
+    /**
+     * Rimuovi un biglietto dalla lista
+     * @param biglietto
+     */
     public void rimuoviBiglietto(Biglietto biglietto) {
         biglietti.remove(biglietto);
     }
 
-    // Ottieni la lista di biglietti
+    /**
+     * Restituisce la lista di biglietti
+     * @return
+     */
     public ArrayList<Biglietto> getBiglietti() {
         return biglietti;
     }

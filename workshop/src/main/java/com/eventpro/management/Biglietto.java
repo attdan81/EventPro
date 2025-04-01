@@ -69,7 +69,9 @@ public class Biglietto {
         this.settore = settore;
     }
 
-    // Metodo per visualizzare le informazioni del biglietto
+    /**
+     * * Restituisce una stringa che rappresenta il biglietto
+     */
     @Override
     public String toString() {
         return "ID: " + id + "\n" +

@@ -12,20 +12,14 @@ import com.eventpro.management.Settore;
 import com.eventpro.management.Biglietto;
 import java.util.ArrayList; 
 
+/**
+ * * CreaBigliettoController
+ * * * Autore: Porta Solestà
+ * * * Data: 2025-04-01
+ * * * Descrizione: Questa classe gestisce la schermata di creazione di un nuovo biglietto.
+ * * * Permette di inserire i dati del biglietto e di salvarlo.
+ */
 public class CreaBigliettoController {
-
-    /**
-     * <Label text="Id biglietto" />
-      <TextField fx:id="idBiglietto"  />
-      <Label text="Nome proprietario"  />
-      <TextField  fx:id="nomeProprietario"/>      
-      <CheckBox fx:id="bigliettoOnline" text="Biglietto online" />
-      <Label text="Settore" />
-      <ChoiceBox fx:id="settoreEvento" prefWidth="150.0" />
-      <Label text="Posto" />
-      <TextField fx:id="postoEvento"  />
-      <Button fx:id="creaBigliettoButton" onAction="#creaBiglietto" text="Aggiungi biglietto" />
-     */
     @FXML
     private TextField idBiglietto;
     @FXML
