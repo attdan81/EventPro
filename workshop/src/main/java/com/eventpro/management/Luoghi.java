@@ -17,7 +17,7 @@ public class Luoghi {
         Settore s4=new Settore("Parterre 2", "yellow", 50);
         Settore s5=new Settore("Anello 3", "orange", 30);
         Settore s6=new Settore("Anello 4", "gray", 20);
-        Settore s7=new Settore("Special Guest", "brown", 1);
+        Settore s7=new Settore("Special Guest", "pink", 1);
 
         ArrayList<Settore> settori1 = new ArrayList<Settore>();
         {
