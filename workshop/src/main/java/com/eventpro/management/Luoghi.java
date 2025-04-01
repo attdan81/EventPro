@@ -17,6 +17,7 @@ public class Luoghi {
         Settore s4=new Settore("Parterre 2", "yellow", 50);
         Settore s5=new Settore("Anello 3", "orange", 30);
         Settore s6=new Settore("Anello 4", "gray", 20);
+        Settore s7=new Settore("Special Guest", "brown", 1);
 
         ArrayList<Settore> settori1 = new ArrayList<Settore>();
         {
@@ -55,6 +56,11 @@ public class Luoghi {
 
         Luogo luogo4 = new Luogo ("Stadio Olimpico", "Viale dei Gladiatori, 2, Roma", "Coordinate 4", settori4);
         luoghi.add(luogo4);
+
+        ArrayList<Settore> settori5 = new ArrayList<Settore>();
+        settori5.add(s7);
+        Luogo luogo5 = new Luogo("Casa","Mia","Coordinate 5",settori5);
+        luoghi.add(luogo5);
     
     }
     

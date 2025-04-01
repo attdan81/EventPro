@@ -44,7 +44,14 @@ public class EventiController {
     
     @FXML
     private void handleFiltraEventi(){
-        
+        eventiListView.getItems().clear();
+        ArrayList<Evento> eventiDisponibili = new ArrayList<Evento>();
+        for (Evento evento : App.eventi.getEventi()){     
+            if(evento.bigliettiDisponibili() > 0){  
+                eventiDisponibili.add(evento);     
+                eventiListView.getItems().add(evento.toString());
+            }
+        }
     }
 
     @FXML
